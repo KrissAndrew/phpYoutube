@@ -1,5 +1,5 @@
-<!-- Including documents makes sense from a reusability standpoint -->
-<!-- This is an example of how to do so -->
+<!-- Shared heading page for website containing nav links &
+ important code for use of varying stylesheets and titles -->
 <?php
     session_start();
     include 'functions/user-functions.php';
@@ -10,7 +10,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Learning Index Page</title>
+    <?php
+    if (isset($pageTitle))
+    echo '<title>'.$pageTitle.'</title>'
+    ?>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <?php

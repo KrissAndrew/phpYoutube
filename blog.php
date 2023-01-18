@@ -1,13 +1,17 @@
 <?php
-    include 'header.php';
+    $pageTitle = 'Blog Page'; 
+    $css = array('blog.css');
+    include_once 'header.php';
 ?>
 
-<section>
-        <h1>Blog</h1>
-</section>
+<body>
+    <div class="wrapper">
+        <section class="index_intro">
+            <h1>Blog Page placeholder</h1>
+            <p>Blog blog blog blog blog.</p>
+        </section>
+    </div>
 
-<body>  
 <?php
+    include_once 'footer.php';
 ?>
-</body>
-</html>

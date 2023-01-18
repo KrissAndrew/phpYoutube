@@ -1,14 +1,17 @@
 <?php
-    include 'header.php';
+    $pageTitle = 'About Page'; 
+    $css = array('about.css');
+    include_once 'header.php';
 ?>
 
-<section>
-        <h1>About</h1>
-</section>
+<body>
+    <div class="wrapper">
+        <section class="index_intro">
+            <h1>About Page placeholder</h1>
+            <p>Important information about the website can go here. Contact and/or useful information.</p>
+        </section>
+    </div>
 
-<body>  
 <?php
-    echo $_SESSION['username'];
+    include_once 'footer.php';
 ?>
-</body>
-</html>

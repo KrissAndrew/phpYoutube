@@ -1,6 +1,7 @@
 <?php
+    $pageTitle = 'Home Page'; 
     $css = array('index.css');
-    include 'header.php';
+    include_once 'header.php';
 ?>
 
 <body>
@@ -10,5 +11,7 @@
             <p>Important information about the website can go here. Explains the purpose or shows nice pictures/videos.</p>
         </section>
     </div>
-</body>
-</html>
+
+<?php
+    include_once 'footer.php';
+?>
