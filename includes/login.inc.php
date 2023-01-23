@@ -1,6 +1,6 @@
 <?php
     include_once 'dbh.inc.php';
-    require_once '../functions/user-functions.php';
+    require_once '../functions/login-functions.php';
 
     //  mysqli_real_escape_string() protects from injection attacks
     if (isset($_REQUEST['submit']))

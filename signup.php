@@ -57,7 +57,7 @@
         echo "<p class='error'>Names must consist of characters only.</p>";
         exit();
     } elseif (strpos($fullUrl, "signup=nomatch") == true) {
-        echo "<p class='error'>Passwords must match.</p>";
+        echo "<p class='error'>Provided passwords do not match.</p>";
         exit();
     } elseif (strpos($fullUrl, "signup=badid") == true) {
         echo "<p class='error'>Username must contain letters and numbers only.</p>";

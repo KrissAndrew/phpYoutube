@@ -2,7 +2,6 @@
  important code for use of varying stylesheets and titles -->
 <?php
     session_start();
-    include 'functions/user-functions.php';
     include 'includes/dbh.inc.php';
 ?>
 
@@ -34,10 +33,10 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="blog.php">Blog</a></li>
-                <!-- Example of dynamix content generation dependant upon a use being logged in. Try applying this to a personal page or smth -->
+                <!-- Example of dynamix content generation dependant upon a use being logged in. Try applying this to a profile page or smth -->
                 <?php
                     if (isset($_SESSION["useruid"])) {
-                        echo '<li><a href="profile.php">Profile</a></li>';
+                        echo '<li><a href="profile.php?user='.$_SESSION["userid"].'">Profile</a></li>';
                         echo '<li><a href="includes/logout.inc.php">Log out</a></li>';
                     } else {
                         echo '<li><a href="signup.php">Sign up</a></li>';

@@ -1,7 +1,7 @@
 <?php
-    // Include for access to db
+    include_once '../functions/signup-functions.php';
+    // Include for access to db connection
     include_once '../includes/dbh.inc.php';
-    include_once '../functions/user-functions.php';
 
     //  mysqli_real_escape_string() protects from injection attacks
     if (isset($_REQUEST['submit'])){
